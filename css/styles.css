@@ -7,7 +7,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-    background-color: #866e36;
+    background-color: #0e3552;
     border-radius: 0;
     border: 0;
 }
@@ -79,7 +79,7 @@ margin-top: 5px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-border: 1px solid #61122f;
+    border: 1px solid #fff;
 }
 
 .navbar-header button.navbar-toggle {
@@ -95,24 +95,33 @@ margin-top: -40px;
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 /* Header */
-    /*#logo-img {
-        background: url('../images/profile-foto-small.png') no-repeat;
-        width: 56px;
-        height: 90px;
-        margin: 5px 5px 5px 0;
-    }*/
+    #photo-small {
+        position: static;
+        background: url('../images/profile-foto-large.png') no-repeat;
+        width: 84px;
+        height: 150px;
+        margin: 10px 10px -80px;
+    }
 
-/* End Header */
+    .navbar-brand h1 {
+        margin-left: 110px;
+    }
+
+    .navbar-brand p {
+        margin-left: 110px;
+    }
+        /* End Header */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    /*#logo-imgsmall {
+    #photo-small {
+        position: relative;
         background: url('../images/profile-foto-small.png') no-repeat;
-        width: 56px;
+        width: 56px;        
         height: 100px;
-        margin: 5px 5px 5px 0;
-    }*/
+        margin: 50px auto 5px;
+    }
 }
 
 /********** Extra small devices only **********/
@@ -148,21 +157,17 @@ margin-top: -40px;
         margin: 0 20px;
         padding: 10px;
         border: 2px solid #fff;
-        background-color: #f6b319;
+        background-color: #c0d9d9;
         color: #951c49;
     }
 
-    /*#container-img-small {
-        display: table;
-        vertical-align: middle;
-    }*/
-
-    /*#photo-small {        
+    #photo-small {
+        position: relative;
+        background: url('../images/profile-foto-small.png') no-repeat;
         width: 56px;
         height: 100px;
-        margin: 5px 50% 20px 0;
-        background: url('../images/profile-foto-small.png') no-repeat;
-    }*/
+        margin: 0 auto 10px;
+    }
 
     #xs-ContactMe {
         margin-top: 5px;
