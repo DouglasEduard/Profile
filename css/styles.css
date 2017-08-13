@@ -88,6 +88,16 @@ margin-top: -40px;
 }
 /* END HEADER */
 
+/* HOME PAGE */
+.container {
+    box-shadow: 0 0 50px #0e3552;
+    border: 2px solid #0e3552;
+    font-style: italic;
+    color: black;
+    text-align: justify;
+}
+/* END HOME PAGE */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 }
@@ -110,7 +120,12 @@ margin-top: -40px;
     .navbar-brand p {
         margin-left: 110px;
     }
-        /* End Header */
+/* End Header */
+
+    .container .jumbotron {
+        background-color: #6c98b9;
+        height: 558px;
+    }
 }
 
 /********** Small devices only **********/
@@ -175,6 +190,48 @@ margin-top: -40px;
         letter-spacing: .1em;
         text-transform: uppercase;
     }
+    /* End Header */
 }
 
-/* End Header */
+/* Footer */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #0e3552;
+  border-top: 0;
+  color: white;
+}
+    .panel-footer div.row {
+        margin-bottom: 35px;
+        color: white;
+    }
+
+#hours, #address {
+  line-height: 2;
+}
+
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+    #address p {
+        font-size: .8em;
+        line-height: 1.8;
+        color: white;
+    }
+
+#testimonials {
+    font-style: italic;
+    color: white;
+}
+
+    #testimonials p:nth-child(2) {
+        margin-top: 25px;
+        color: white;
+    }
+
+.text-center {
+    color: white;
+}
+/* End Footer */
+
