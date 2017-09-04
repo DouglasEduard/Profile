@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #fff;
+  color: #000;
+  background-color: #0e3552;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -89,13 +89,51 @@ margin-top: -40px;
 /* END HEADER */
 
 /* HOME PAGE */
-.container {
-    box-shadow: 0 0 50px #0e3552;
-    border: 2px solid #0e3552;
-    font-style: italic;
-    color: black;
+
+#main-content {
     text-align: justify;
 }
+
+#projects-tile, #technologies-tile, #history-tile {
+    height: 240px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#projects-tile {
+    background: url('../images/projects-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#technologies-tile {
+    background: url('../images/technologies-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#history-tile {
+    background: url('../images/history-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+    #projects-tile span, #technologies-tile span, #history-tile span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        background-color: #000;
+        color: #fff;
+        opacity: .8;
+    }
 /* END HOME PAGE */
 
 /********** Large devices only **********/
@@ -109,7 +147,7 @@ margin-top: -40px;
         position: static;
         background: url('../images/profile-foto-large.png') no-repeat;
         width: 84px;
-        height: 150px;
+        height: 100px;
         margin: 10px 10px -80px;
     }
 
@@ -123,8 +161,8 @@ margin-top: -40px;
 /* End Header */
 
     .container .jumbotron {
-        background-color: #6c98b9;
-        height: 558px;
+        background-color: #fff;
+        height: 300px;
     }
 }
 
@@ -195,7 +233,7 @@ margin-top: -40px;
 
 /* Footer */
 .panel-footer {
-  margin-top: 30px;
+  margin-top: 80px;
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: #0e3552;
@@ -220,12 +258,12 @@ margin-top: -40px;
         color: white;
     }
 
-#testimonials {
+#phrase {
     font-style: italic;
     color: white;
 }
 
-    #testimonials p:nth-child(2) {
+    #phrase p:nth-child(2) {
         margin-top: 25px;
         color: white;
     }
