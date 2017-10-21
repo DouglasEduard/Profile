@@ -12,8 +12,8 @@
 <body>
     <header>
         <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
+            <div class="container" id="HeaderProdContant">
+                <div class="navbar-header" id="nbhMain">
                     <a href="index.html" class="pull-left  visible-lg">
                         <div id="logo-img"></div>
                     </a>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <a href=""><div id="projects-tile"><span>Projects</span></div></a>
+                        <a href="Projects.html"><div id="projects-tile"><span>Projects</span></div></a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <a href=""><div id="technologies-tile"><span>Technologies</span></div></a>
@@ -96,7 +96,7 @@
     <div id="xs-ContactMe" class="text-center visible-xs">* Contact me</div>
  
     <footer class="panel-footer">
-        <div class="container">
+        <div class="container" id="pnlFooter">
             <div class="row">
                 <section id="hours" class="col-sm-4">
                     <span>Hours when I am available:</span><br>
@@ -125,8 +125,17 @@
         </div>
     </footer>
 
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/sessionStorage.js"></script>
+
+    <script>
+        var nbHeaderMain = document.getElementById("nbhMain").innerHTML;
+        var imgSmall = document.getElementById("container-img-small").innerHTML;
+        var collapNav = document.getElementById("collapsable-nav").innerHTML;
+        var footer = document.getElementById("pnlFooter").innerHTML;
+        
+        LoadHeaderInSession(nbHeaderMain, imgSmall, collapNav, footer);
+    </script>
 </body>
 </html>
