@@ -13,8 +13,8 @@ body {
 }
 
 #logo-img {
-    background: url('../images/profile-foto-large.png') no-repeat;
-    width: 84px;
+    background: url('../images/profile-foto-2018.png') no-repeat;
+    width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
 }
@@ -94,13 +94,25 @@ margin-top: -40px;
     text-align: justify;
 }
 
-#projects-tile, #technologies-tile, #history-tile {
+.tile {
     height: 240px;
     width: 100%;
     margin-bottom: 15px;
     position: relative;
     border: 2px solid #3F0C1F;
     overflow: hidden;
+}
+
+.tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
 }
 
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
@@ -121,20 +133,68 @@ margin-top: -40px;
     background: url('../images/history-tile.jpg') no-repeat;
     background-position: center;
 }
-
-    #projects-tile span, #technologies-tile span, #history-tile span {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 1.6em;
-        text-transform: uppercase;
-        background-color: #000;
-        color: #fff;
-        opacity: .8;
-    }
 /* END HOME PAGE */
+
+/**HISTORY PAGE**/
+
+#AI900-tile {
+    background: url('../images/AI900.jpg') no-repeat;
+    background-position: center;
+}
+
+#CourseraUCI-tile {
+    background: url('../images/CourseraUCI.jpeg') no-repeat;
+    background-position: center;
+}
+
+#ComputerScience-tile {
+    background: url('../images/IBTA.jpg') no-repeat;
+    background-position: center;    
+}
+
+#MechatronicTechnician-tile {
+    background: url('../images/ITJ.jpg') no-repeat;
+    background-position: center;        
+}
+
+#MechatronicTechnician-TG-tile {
+    background: url('../images/ITJ-TG.jpg') no-repeat;
+    background-position: center;        
+}
+
+#MechatronicTechnician-BS-tile {
+    background: url('../images/ITJ-BestStudent.jpg') no-repeat;
+    background-position: center;        
+}
+
+#High_performance_2008-tile {
+    background: url('../images/High_performance_2008-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#MicrosoftHTMLCSSJS-tile {
+    background: url('../images/MicrosoftHTMLCSSJS.jpeg') no-repeat;
+    background-position: center;
+}
+
+#GestaoDeProjetos2008-tile {
+    background: url('../images/GestaoDeProjetos2008.jpeg') no-repeat;
+    background-position: center;    
+}
+
+#Pos2021-tile {
+    background: url('../images/Pos2021-tile.jpeg') no-repeat;
+    background-position: center;    
+}
+
+#ASPNET-MVC5-tile {
+    background: url('../images/ASPNET-MVC5-tile.jpg') no-repeat;
+    background-position: center;    
+}
+
+/****/
+
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
